@@ -1,0 +1,225 @@
+:root {
+  --primary-color: #2a4d69;
+  --secondary-color: #4b86b4;
+  --accent-color: #adcbe3;
+  --background-color: #f7f9fc;
+  --text-color: #333;
+  --light-gray: #e3e3e3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.7;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+#course-title {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background-color: var(--secondary-color);
+  padding: 1rem 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+main {
+  max-width: 1300px;
+  margin: 2.5rem auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "name name"
+    "about resources";
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.student-name {
+  grid-area: name;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+}
+
+.about-card {
+  grid-area: about;
+}
+
+.resources-card {
+  grid-area: resources;
+}
+
+.card h2 {
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.6rem 1rem;
+  border-radius: 8px 8px 0 0;
+  margin: -1.5rem -1.5rem 1rem -1.5rem;
+}
+
+.card-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-photo {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.profile-img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.place-title {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.place-rule {
+  margin: 0.5rem 0;
+  border: none;
+  border-top: 2px solid var(--light-gray);
+}
+
+.place-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.place-img {
+  width: 140px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.place-desc {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.resources-inner ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.resources-inner li {
+  margin-bottom: 0.6rem;
+}
+
+.resources-inner a {
+  color: var(--secondary-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.resources-inner a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: auto;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1.2rem 0;
+  font-size: 0.95rem;
+}
+
+footer p {
+  margin: 0.2rem 0;
+}
+
+footer .small {
+  font-size: 0.85rem;
+  color: var(--accent-color);
+}
+
+@media (max-width: 850px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "name"
+      "about"
+      "resources";
+  }
+
+  .card-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .place-block {
+    flex-direction: column;
+  }
+}
