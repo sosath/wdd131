@@ -19,10 +19,15 @@ header h1 {
   font-size: 1.5rem;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 #menu {
-  font-size: 1.5rem;
-  background: none;
-  border: none;
+  font-size: 1.8rem;
   color: white;
   cursor: pointer;
   position: absolute;
@@ -30,16 +35,12 @@ header h1 {
   right: 1rem;
   background: none;
   border: none;
-  color: white;
-  font-size: 1.8rem;
-  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
 #menu:hover {
   transform: scale(1.2);
 }
-
 
 .navigation {
   display: none;
