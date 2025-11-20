@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolivia - Country Page</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Bolivia</h1>
+    <p class="tagline">“Heart Of South America”</p>
+  </header>
+
+  <section class="hero">
+    <picture>
+      <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+      <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+      <img src="images/hero-small.webp" alt="photo from Bolivia">
+    </picture>
+  </section>
+
+  <main class="content-overlay">
+    <section class="data">
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Capital:</strong> Sucre (constitutional), La Paz (seat of government)</li>
+        <li><strong>Population:</strong> 12.08 millones</li>
+        <li><strong>Languages:</strong> Spanish + 36 indigenous languages</li>
+        <li><strong>Local currency:</strong> Boliviano (BOB)</li>
+        <li><strong>Area:</strong> 1,098,581 km²</li>
+      </ul>
+    </section>
+
+    <section class="weather">
+      <h2>Weather <span class="wide-icon"></span></h2>
+
+      <div class="weather-box">
+        <img src="images/cloudy.svg" class="weather-icon-mobile" alt="icono clima">
+
+        <p><strong>Conditions:</strong> Partly cloudy</p>
+        <p><strong>Temperature:</strong> <span id="temp">12</span> °C</p>
+        <p><strong>Wind:</strong> <span id="wind">10</span> km/h</p>
+        <p><strong>Wind chill:</strong> <span id="windchill"></span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Thomas Sosa Lijeron | Bolivia</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
