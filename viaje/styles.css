@@ -1,0 +1,274 @@
+body {
+    background-color: #d1b896;
+    background-image: url('images/fondo.png'); 
+    background-size: cover; 
+    background-attachment: fixed; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    color: #4a3420;
+    font-size: 6em;
+    margin-bottom: 60px;
+    font-family: 'Crete Round', 'Georgia', serif; 
+    letter-spacing: 5px; 
+    text-shadow: 
+        3px 3px 0px rgba(255, 255, 255, 0.5),
+        6px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.photos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; 
+}
+
+.photo-link {
+    text-decoration: none; 
+    color: inherit;
+    transition: transform 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.photo-link:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4); 
+}
+
+.polaroid {
+    background-color: white;
+    padding: 20px 20px 30px 20px; 
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4); 
+    display: inline-block;
+}
+
+.photos-grid a:nth-child(1) .polaroid { transform: rotate(-5deg); }
+.photos-grid a:nth-child(2) .polaroid { transform: rotate(0deg); }
+.photos-grid a:nth-child(3) .polaroid { transform: rotate(5deg); }
+
+.polaroid img {
+    display: block;
+    width: 100%;
+    max-width: 390px; 
+    height: 260px; 
+    object-fit: cover; 
+}
+
+.caption {
+    font-family: 'Crete Round', 'Georgia', serif; 
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4a3420;
+    margin-top: 15px; 
+}
+
+.title-detail {
+    font-family: 'Crete Round', 'Georgia', serif;
+    color: #4a3420;
+    font-size: 4em;
+    margin: 10px 0 20px 0;
+}
+
+.btn-back {
+    text-decoration: none;
+    color: #4a3420;
+    font-weight: bold;
+    font-family: 'Crete Round', serif;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #4a3420;
+    color: #fff;
+}
+
+.scrapbook-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.polaroid-stack {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.polaroid-detail {
+    background: white;
+    padding: 15px 15px 35px 15px;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
+    width: 280px; 
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), z-index 0.5s;
+    position: relative;
+    cursor: pointer;
+}
+
+.polaroid-detail:hover {
+    transform: scale(1.3) rotate(0deg) !important;
+    z-index: 100 !important;
+    box-shadow: 20px 25px 50px rgba(0,0,0,0.5);
+}
+
+.polaroid-detail img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-1 { transform: rotate(-3deg); }
+.card-2 { transform: rotate(2deg); }
+.card-3 { transform: rotate(-2deg); }
+
+.notes-stack {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.note-paper {
+    background: white;
+    background-image: 
+        linear-gradient(#e5e5e5 1px, transparent 1px),
+        linear-gradient(90deg, #e5e5e5 1px, transparent 1px);
+    background-size: 20px 20px;
+    padding: 30px;
+    min-width: 350px; 
+    box-shadow: 2px 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}
+
+.note-paper h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: #332211;
+    margin-top: 0;
+}
+
+.visit-list {
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+    font-size: 1.1em;
+}
+
+.tiktok-link {
+    display: inline-block;
+    background: #000;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.tiktok-link:hover {
+    background: #fe2c55;
+    transform: scale(1.05);
+}
+
+.subtitle {
+    font-family: 'Crete Round', serif;
+    color: #4a3420;
+    font-size: 2em;
+    margin-top: -50px; 
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+.photos-grid .polaroid img {
+    max-width: 450px; 
+    height: 300px;    
+}
+
+.photos-grid {
+    gap: 60px; 
+}
+
+.btn-itinerario {
+    position: fixed;        
+    bottom: 20px;           
+    left: 50%;              
+    transform: translateX(-50%); 
+    
+    background-color: #333; 
+    color: white;
+    padding: 15px 40px;
+    border: 2px solid white; 
+    border-radius: 30px;    
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 999;           
+    transition: 0.3s;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+}
+
+.btn-itinerario:hover {
+    background-color: #f1f1f1;
+    color: #333;
+    transform: translateX(-50%) scale(1.05);
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.8);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: 10% auto; 
+    padding: 40px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.item-viaje {
+    margin: 20px 0;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}

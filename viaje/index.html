@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra 1ra Aventura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">PLAN DE VIAJE</h1>
+        <h2 class="subtitle">Thomas y Karissa | 06/01/2026</h2>
+
+        <div class="photos-grid">
+            <a href="sucre.html" class="photo-link">
+                <div class="polaroid">
+                    <img src="images/sucre.jpg" alt="Vista de la Ciudad de Sucre">
+                    <p class="caption">Sucre</p>
+                </div>
+            </a>
+
+            <a href="uyuni.html" class="photo-link">
+                <div class="polaroid">
+                    <img src="images/uyuni.jpg" alt="Salar de Uyuni">
+                    <p class="caption">Salar de Uyuni</p>
+                </div>
+            </a>
+
+            <a href="lapaz.html" class="photo-link">
+                <div class="polaroid">
+                    <img src="images/lapaz.jpg" alt="La Paz">
+                    <p class="caption">La Paz</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div style="text-align: center; padding: 20px;">
+    <button onclick="document.getElementById('modalItinerario').style.display='block'" class="btn-itinerario">
+        ITINERARIO
+    </button>
+</div>
+
+<div id="modalItinerario" class="modal">
+    <div class="modal-content">
+        <span onclick="document.getElementById('modalItinerario').style.display='none'" class="close">&times;</span>
+        
+        <h2>ITINERARIO DE VIAJES</h2>
+        <hr>
+        
+        <div class="item-viaje">
+            <p><strong>Santa cruz - Sucre: 784 bs</strong></p>
+            <p>SALIDA: SANTA CRUZ, BO (VIRU VIRU INTL) 06 ENE 07:35</p>
+            <p>LLEGADA: SUCRE, BO (ALCANTARI) 06 ENE 09:40</p>
+        </div>
+        <hr>
+        
+        <div class="item-viaje">
+            <p><strong>Sucre - Uyuni: 240 bs</strong></p>
+            <p>SALIDA: TERMINAL 06 ENE 22:00</p>
+            <p>LLEGADA: TERMINAL 07 ENE 05:00</p>
+        </div>
+        <hr>
+        
+        <div class="item-viaje">
+            <p><strong>Uyuni - La Paz: 200 bs</strong></p>
+            <p>SALIDA: TERMINAL 07 ENE 22:00</p>
+            <p>LLEGADA: TERMINAL 08 ENE 08:00</p>
+        </div>
+        <hr>
+        
+        <div class="item-viaje">
+            <p><strong>La Paz - Santa cruz: 300 bs</strong></p>
+            <p>SALIDA: TERMINAL 10 ENE 16:00</p>
+            <p>LLEGADA: TERMINAL 11 ENE 08:00</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
