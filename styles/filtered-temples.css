@@ -1,17 +1,28 @@
+:root {
+  --primary-color: #30475e;
+  --secondary-color: #b67f7f;
+  --accent-color: #f9f9f9;
+  --text-color: #222;
+  --light-text: #fff;
+  --gray-text: #555;
+  --card-bg: #ffffff;
+  --border-color: #ddd;
+}
+
 body {
   font-family: 'Poppins', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #222;
-  background-color: #f9f9f9;
+  color: var(--text-color);
+  background-color: var(--accent-color);
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #30475e;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--light-text);
   padding: 1rem 2rem;
   position: relative;
 }
@@ -23,7 +34,7 @@ header h1 {
 
 #menu {
   font-size: 1.8rem;
-  color: white;
+  color: var(--light-text);
   cursor: pointer;
   background: none;
   border: none;
@@ -33,7 +44,7 @@ header h1 {
 .navigation {
   display: none;
   flex-direction: column;
-  background-color: #30475e;
+  background-color: var(--primary-color);
   width: 100%;
   position: absolute;
   top: 100%;
@@ -43,17 +54,17 @@ header h1 {
 }
 
 .navigation a {
-  color: white;
+  color: var(--light-text);
   text-decoration: none;
   padding: 1rem;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: block;
   transition: 0.3s;
 }
 
 .navigation a:hover, .navigation a.active {
-  background-color: #b67f7f;
-  color: #fff;
+  background-color: var(--secondary-color);
+  color: var(--light-text);
 }
 
 .show {
@@ -68,9 +79,9 @@ main {
 
 main h2 {
   text-align: center;
-  color: #30475e;
+  color: var(--primary-color);
   margin-bottom: 2rem;
-  border-bottom: 2px solid #b67f7f;
+  border-bottom: 2px solid var(--secondary-color);
   display: inline-block;
   width: 100%;
   padding-bottom: 10px;
@@ -85,8 +96,8 @@ main h2 {
 
 figure {
   margin: 0;
-  background: white;
-  border: 1px solid #ddd;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
@@ -108,8 +119,8 @@ figure img {
 }
 
 figure h3 {
-  background-color: #30475e;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--light-text);
   margin: 0;
   padding: 1rem;
   text-align: center;
@@ -119,7 +130,7 @@ figure h3 {
 figure p {
   padding: 0.5rem 1rem;
   margin: 0;
-  color: #555;
+  color: var(--gray-text);
   font-size: 0.9rem;
 }
 
@@ -129,13 +140,13 @@ figure p:last-of-type {
 
 .label {
   font-weight: 600;
-  color: #30475e;
+  color: var(--primary-color);
 }
 
 footer {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #30475e;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--light-text);
   margin-top: 3rem;
 }
