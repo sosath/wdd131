@@ -1,4 +1,12 @@
 @media (min-width: 768px) {
+  nav.navigation {
+    display: flex !important; 
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
   header {
     padding: 1rem 5%;
   }

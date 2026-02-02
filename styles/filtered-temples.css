@@ -41,6 +41,12 @@ header h1 {
   display: block;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navigation {
   display: none;
   flex-direction: column;
