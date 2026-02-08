@@ -62,3 +62,11 @@ footer {
     padding: 20px;
     color: var(--primary-olive);
 }
+
+.wireframe-img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--terracotta);
+    display: block;
+    margin: 10px 0;
+}
