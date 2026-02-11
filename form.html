@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Review</title>
+    <title>Product Review Form - WDD 131</title>
+    <meta name="description" content="Product review form for WDD 131 assignment. Allows users to rate products and provide feedback.">
+    <meta name="author" content="Thomas Sosa Lijeron">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
@@ -18,18 +23,16 @@
                 
                 <label for="productName">Product Name *</label>
                 <select id="productName" name="productName" required>
-                    <option value="" disabled selected>Choose a Product ...</option>
-                    </select>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
 
-                <div class="rating-group">
-                    <p>Overall Rating *</p>
-                    <div class="stars">
-                        <label><input type="radio" name="rating" value="1" required> ☆</label>
-                        <label><input type="radio" name="rating" value="2"> ☆☆</label>
-                        <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
-                        <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
-                        <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
-                    </div>
+                <p>Overall Rating *</p>
+                <div class="stars">
+                    <label><input type="radio" id="star1" name="rating" value="1" required> ☆</label>
+                    <label><input type="radio" id="star2" name="rating" value="2" required> ☆☆</label>
+                    <label><input type="radio" id="star3" name="rating" value="3" required> ☆☆☆</label>
+                    <label><input type="radio" id="star4" name="rating" value="4" required> ☆☆☆☆</label>
+                    <label><input type="radio" id="star5" name="rating" value="5" required> ☆☆☆☆☆</label>
                 </div>
 
                 <label for="installDate">Date of Installation *</label>
@@ -39,13 +42,16 @@
             <fieldset>
                 <legend>Features & Review</legend>
                 <p>Which features did you find useful? (Check all that apply)</p>
-                <label><input type="checkbox" name="features" value="durability"> Durability</label>
-                <label><input type="checkbox" name="features" value="ease"> Ease of Use</label>
-                <label><input type="checkbox" name="features" value="performance"> Performance</label>
-                <label><input type="checkbox" name="features" value="design"> Design</label>
+                
+                <div class="features-group">
+                    <label><input type="checkbox" id="feature1" name="features" value="durability"> Durability</label>
+                    <label><input type="checkbox" id="feature2" name="features" value="ease"> Ease of Use</label>
+                    <label><input type="checkbox" id="feature3" name="features" value="performance"> Performance</label>
+                    <label><input type="checkbox" id="feature4" name="features" value="design"> Design</label>
+                </div>
 
-                <label for="review">Written Review (Optional)</label>
-                <textarea id="review" name="review" rows="4"></textarea>
+                <label for="reviewText">Written Review (Optional)</label>
+                <textarea id="reviewText" name="reviewText" rows="4"></textarea>
 
                 <label for="userName">Your Name (Optional)</label>
                 <input type="text" id="userName" name="userName">
