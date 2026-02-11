@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form - WDD 131</title>
-    <meta name="description" content="Product review form for WDD 131 assignment. Standardized accessibility compliant form.">
+    <meta name="description" content="Product review form for WDD 131 assignment. Allows users to rate products and provide feedback.">
     <meta name="author" content="Thomas Sosa Lijeron">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,6 @@
         <form method="get" action="review.html" class="wf1">
             <fieldset>
                 <legend>Product Information</legend>
-                
                 <label for="productName">Product Name *</label>
                 <select id="productName" name="productName" required>
                     <option value="" disabled selected>Select a Product ...</option>
@@ -57,7 +56,6 @@
             <fieldset>
                 <legend>Features & Review</legend>
                 <p>Which features did you find useful? (Check all that apply)</p>
-                
                 <div class="features-group">
                     <div class="feature-item">
                         <input type="checkbox" id="feature1" name="features" value="durability">
@@ -83,7 +81,6 @@
                 <label for="userName">Your Name (Optional)</label>
                 <input type="text" id="userName" name="userName">
             </fieldset>
-
             <input type="submit" value="Post Review">
         </form>
     </main>

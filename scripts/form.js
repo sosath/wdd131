@@ -29,8 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("reviewCount-ls", reviewCount);
         
         const counterDisplay = document.getElementById("counter");
-        if (counterDisplay) {
-            counterDisplay.textContent = reviewCount;
-        }
+        if (counterDisplay) counterDisplay.textContent = reviewCount;
     }
 });
