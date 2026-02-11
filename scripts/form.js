@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (productSelect) {
         products.forEach(product => {
             const option = document.createElement("option");
-            option.value = product.id;
-            option.textContent = product.name;
+            option.value = product.id; 
+            option.textContent = product.name; 
             productSelect.appendChild(option);
         });
     }
@@ -24,11 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (modSpan) modSpan.textContent = document.lastModified;
 
     if (window.location.pathname.includes("review.html")) {
-        let numReviews = Number(localStorage.getItem("reviewCount")) || 0;
-        numReviews++;
-        localStorage.setItem("reviewCount", numReviews);
+        let reviewCount = Number(localStorage.getItem("reviewCount-ls")) || 0;
+        reviewCount++;
+        localStorage.setItem("reviewCount-ls", reviewCount);
         
         const counterDisplay = document.getElementById("counter");
-        if (counterDisplay) counterDisplay.textContent = numReviews;
+        if (counterDisplay) {
+            counterDisplay.textContent = reviewCount;
+        }
     }
 });

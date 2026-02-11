@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form - WDD 131</title>
-    <meta name="description" content="Product review form for WDD 131 assignment. Allows users to rate products and provide feedback.">
+    <meta name="description" content="Product review form for WDD 131 assignment. Standardized accessibility compliant form.">
     <meta name="author" content="Thomas Sosa Lijeron">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,11 +28,26 @@
 
                 <p>Overall Rating *</p>
                 <div class="stars">
-                    <label><input type="radio" id="star1" name="rating" value="1" required><span>☆</span></label>
-                    <label><input type="radio" id="star2" name="rating" value="2" required><span>☆☆</span></label>
-                    <label><input type="radio" id="star3" name="rating" value="3" required><span>☆☆☆</span></label>
-                    <label><input type="radio" id="star4" name="rating" value="4" required><span>☆☆☆☆</span></label>
-                    <label><input type="radio" id="star5" name="rating" value="5" required><span>☆☆☆☆☆</span></label>
+                    <div class="star-item">
+                        <label for="star1">☆</label>
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                    </div>
+                    <div class="star-item">
+                        <label for="star2">☆☆</label>
+                        <input type="radio" id="star2" name="rating" value="2" required>
+                    </div>
+                    <div class="star-item">
+                        <label for="star3">☆☆☆</label>
+                        <input type="radio" id="star3" name="rating" value="3" required>
+                    </div>
+                    <div class="star-item">
+                        <label for="star4">☆☆☆☆</label>
+                        <input type="radio" id="star4" name="rating" value="4" required>
+                    </div>
+                    <div class="star-item">
+                        <label for="star5">☆☆☆☆☆</label>
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                    </div>
                 </div>
 
                 <label for="installDate">Date of Installation *</label>
@@ -44,10 +59,22 @@
                 <p>Which features did you find useful? (Check all that apply)</p>
                 
                 <div class="features-group">
-                    <label><input type="checkbox" id="feature1" name="features" value="durability"> Durability</label>
-                    <label><input type="checkbox" id="feature2" name="features" value="ease"> Ease of Use</label>
-                    <label><input type="checkbox" id="feature3" name="features" value="performance"> Performance</label>
-                    <label><input type="checkbox" id="feature4" name="features" value="design"> Design</label>
+                    <div class="feature-item">
+                        <input type="checkbox" id="feature1" name="features" value="durability">
+                        <label for="feature1">Durability</label>
+                    </div>
+                    <div class="feature-item">
+                        <input type="checkbox" id="feature2" name="features" value="ease">
+                        <label for="feature2">Ease of Use</label>
+                    </div>
+                    <div class="feature-item">
+                        <input type="checkbox" id="feature3" name="features" value="performance">
+                        <label for="feature3">Performance</label>
+                    </div>
+                    <div class="feature-item">
+                        <input type="checkbox" id="feature4" name="features" value="design">
+                        <label for="feature4">Design</label>
+                    </div>
                 </div>
 
                 <label for="reviewText">Written Review (Optional)</label>

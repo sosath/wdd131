@@ -65,29 +65,27 @@ textarea {
     border: 1px solid var(--border-light);
     border-radius: 4px;
     box-sizing: border-box;
-    color: var(--text-main);
 }
 
 .stars {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
     margin-top: 1rem;
+}
+
+.star-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
-.stars label {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+.star-item label {
     margin-top: 0;
+    margin-bottom: 5px;
     font-weight: normal;
     cursor: pointer;
-}
-
-.stars span {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
+    font-size: 1.1rem;
 }
 
 .features-group {
@@ -96,24 +94,25 @@ textarea {
     gap: 0.5rem;
 }
 
-.features-group label {
+.feature-item {
     display: flex;
     align-items: center;
-    margin-top: 0;
-    font-weight: normal;
     min-height: 44px;
+}
+
+.feature-item label {
+    margin-top: 0;
+    margin-left: 10px;
+    font-weight: normal;
+    cursor: pointer;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
     width: 25px;
     height: 25px;
-    margin: 0;
     cursor: pointer;
-}
-
-.features-group input {
-    margin-right: 12px;
+    margin: 0;
 }
 
 input[type="submit"] {
@@ -125,7 +124,7 @@ input[type="submit"] {
     border-radius: 4px;
     font-size: 1.2rem;
     cursor: pointer;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     transition: background 0.3s;
 }
 
@@ -141,13 +140,10 @@ input[type="submit"]:hover {
     text-decoration: none;
 }
 
-.back-link:hover {
-    text-decoration: underline;
-}
-
 @media (min-width: 600px) {
-    .stars, .features-group {
+    .features-group {
         flex-direction: row;
         flex-wrap: wrap;
+        gap: 15px;
     }
 }
