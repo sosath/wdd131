@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (modSpan) modSpan.textContent = document.lastModified;
 
     if (window.location.pathname.includes("review.html")) {
-        let numReviews = Number(window.localStorage.getItem("reviewCount")) || 0;
+        let numReviews = Number(localStorage.getItem("reviewCount")) || 0;
         numReviews++;
         localStorage.setItem("reviewCount", numReviews);
         
