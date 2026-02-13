@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner | Explore Bolivia</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <div class="logo-placeholder">■</div>
+            <h1>Explore Bolivia</h1>
+        </div>
+        <button id="menu-button">☰</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="planner.html" class="active">Planner</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="favorites-section">
+            <h2>My Saved Places</h2>
+            <div id="favorites-grid" class="grid-container">
+                </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Plan Your Trip</h2>
+            <form id="planner-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Questions or Suggestions:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit" class="cta-button">Send Inquiry</button>
+            </form>
+            <div id="form-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Explore Bolivia | <a href="references.html">References</a></p>
+    </footer>
+</body>
+</html>

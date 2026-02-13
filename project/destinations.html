@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | Explore Bolivia</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <div class="logo-placeholder">■</div>
+            <h1>Explore Bolivia</h1>
+        </div>
+        <button id="menu-button">☰</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
+                <li><a href="planner.html">Planner</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filter-area">
+            <h2>Our Attractions</h2>
+            <div class="filters">
+                <button class="filter-btn" data-category="all">All</button>
+                <button class="filter-btn" data-category="Nature">Nature</button>
+                <button class="filter-btn" data-category="Cultural">Cultural</button>
+                <button class="filter-btn" data-category="Food">Gastronomy</button>
+            </div>
+        </section>
+
+        <div id="destinations-grid" class="grid-container">
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Explore Bolivia | <a href="references.html">References</a></p>
+    </footer>
+</body>
+</html>
