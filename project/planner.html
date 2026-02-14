@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,15 +35,18 @@
         <section class="form-section">
             <h2>Plan Your Trip</h2>
             <form id="planner-form">
-                <label for="name">Full Name *</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Questions or Suggestions (Optional)</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-
+                <div class="form-group">
+                    <label for="user-name">Full Name *</label>
+                    <input type="text" id="user-name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="user-email">Email *</label>
+                    <input type="email" id="user-email" name="email" required placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="user-message">Questions or Suggestions (Optional)</label>
+                    <textarea id="user-message" name="message" rows="4"></textarea>
+                </div>
                 <button type="submit" class="cta-button">Send Inquiry</button>
             </form>
             <div id="form-message"></div>

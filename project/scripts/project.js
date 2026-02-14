@@ -129,14 +129,28 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 });
 
 const plannerForm = document.querySelector('#planner-form');
+
 plannerForm?.addEventListener('submit', (e) => {
     e.preventDefault();
-    const name = document.querySelector('#name').value;
-    document.querySelector('#form-message').innerHTML = `
-        <div style="background: #d4edda; color: #155724; padding: 1rem; border-radius: 5px; margin-top: 1rem;">
-            Thank you, ${name}! We have received your inquiry for Explore Bolivia.
-        </div>`;
-    plannerForm.reset();
+
+    const nameInput = document.querySelector('#user-name'); 
+    const messageContainer = document.querySelector('#form-message');
+
+    if (nameInput && messageContainer) {
+        const name = nameInput.value;
+        
+        messageContainer.innerHTML = `
+            <div style="background: #d4edda; color: #155724; padding: 1.5rem; border-radius: 8px; border: 1px solid #c3e6cb; margin-top: 1rem; animation: fadeIn 0.5s ease;">
+                <strong>Thanks ${name}!</strong> <br>
+                We have received your application for Explore Bolivia successfully. We will contact you soon! ✨
+            </div>`;
+        
+        if (typeof showToast === "function") {
+            showToast("Inquiry sent successfully! 📧");
+        }
+
+        plannerForm.reset();
+    }
 });
 
 document.addEventListener('DOMContentLoaded', () => {

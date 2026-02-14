@@ -146,9 +146,95 @@ nav a:hover, nav a.active { color: var(--earth-tan); border-bottom: 2px solid va
 }
 .cta-button:hover, .fav-btn:hover { background: var(--dark-green); }
 
-.form-section { background: var(--white); padding: 4rem 5%; margin-top: 2rem; }
-form { max-width: 600px; margin: 0 auto; display: grid; gap: 15px; }
-input, textarea { padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; }
+.form-section {
+    background-color: var(--white);
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    max-width: 700px;
+    margin: 3rem auto;
+}
+
+.form-section h2 {
+    color: var(--dark-green);
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.form-section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--terracotta);
+    margin: 10px auto;
+}
+
+#planner-form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--dark-green);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+
+input:focus, 
+textarea:focus {
+    outline: none;
+    border-color: var(--earth-tan);
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(221, 161, 94, 0.2);
+}
+
+#planner-form .cta-button {
+    background-color: var(--dark-green);
+    color: var(--cream-bg);
+    padding: 15px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s transform 0.2s;
+}
+
+#planner-form .cta-button:hover {
+    background-color: var(--primary-olive);
+    transform: translateY(-2px);
+}
+
+#planner-form .cta-button:active {
+    transform: translateY(0);
+}
+
+#form-message {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
 
 footer { 
     background: var(--dark-green); 
