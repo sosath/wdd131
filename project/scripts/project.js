@@ -134,7 +134,7 @@ plannerForm?.addEventListener('submit', (e) => {
     const name = document.querySelector('#name').value;
     document.querySelector('#form-message').innerHTML = `
         <div style="background: #d4edda; color: #155724; padding: 1rem; border-radius: 5px; margin-top: 1rem;">
-            Thank you, ${name}! We have received your inquiry for Explora Bolivia.
+            Thank you, ${name}! We have received your inquiry for Explore Bolivia.
         </div>`;
     plannerForm.reset();
 });
